@@ -1,6 +1,3 @@
-// Den här filen behöver du inte bry dig om.
-// Men tjuvkika gärna!
-
 import { chooseParticleColor, bang } from '../confetti.js'
 
 const addConfettiParticles = ({ groupName, particleAmount, xPosition, yPosition, xVelocity, yVelocity, xSpread, ySpread }) => {
@@ -119,6 +116,7 @@ render()
 
 
 document.querySelector('#confettiButton').addEventListener('click', () => {
+  console.log('click');
   bang(addConfettiParticles)
 })
 
